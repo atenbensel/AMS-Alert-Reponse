@@ -1,0 +1,173 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="668,1492" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="626,1427" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Care Center AMS" sap:VirtualizedContainerService.HintSize="564,1315" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="530,1099" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times" sap:VirtualizedContainerService.HintSize="488,1005" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="295">
+              <ui:RepeatNumberOfTimesX.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
+                  </ActivityAction.Argument>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="454,850" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Clear'" sap:VirtualizedContainerService.HintSize="412,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://wsiams.wsgc.com/AMS/DirectShipWISMOCancels.aspx" DesignTimeRectangle="71, 496, 10, 10" ElementType="InputBox" FriendlyName="'U'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentPlaceHolder1_ASPxGridViewMain_DXSelBtn0_D' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentPlaceHolder1_ASPxGridViewMain_DXSelBtn0_D' tag='SPAN' type='' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADFSURBVDhPpZLbDoIwEET9/6/SGKNyUSm31nJpBYXEL5CXsWtEAwEScZJ92Z3TnWy6wEz9Dz6aBlV9nyzytPqANNg5DPE5RyQyBDyFHyXwAokjE1ht3JenVQckMwsTyLSASC7gUpuHFOxjDOcUj4MslBDG3FckFKxDNA5SJNrSF23fu+E4SHG4VO/OV0leYmv74yDFGdqY6Zs53ARoG5CZS2bqilxXUEUNXdbgJqo1FXW5duCauK7Hu2V6NBsEZ3+AXzUTBJ4sCO1VPsUKxgAAAABJRU5ErkJggg==" InformativeScreenshot="ec2fe675adbcaeeefc8682414e03d1e9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Care Center AMS' /&gt;" SearchSteps="FuzzySelector, Image" Text="U" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='SPAN' type='' /&gt;">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="49, 449, 19, 9" ElementType="Text" FriendlyName="'Clear'" FullSelectorArgument="&lt;webctrl parentid='ctl00_ContentPlaceHolder1_ASPxGridViewMain_DXCBtn0' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ctl00_ContentPlaceHolder1_ASPxGridViewMain_DXCBtn0' tag='SPAN' type='' aaname='Clear' check:text='Clear' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAANCAYAAABCZ/VdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEVSURBVDhP7ZExi8JAEIXvT1pdf5VVrkkKtVi2WNLmUngWYrEIQiAiBISAnKQQweNgG4UQIUQICv6E58TEVYLFWdgcVzzC7Mz79mXnZX844ln6M/AcyTZFVtWZ+oHa3fYfk4avxx0YHx7C0EPX6MDf0JnkkPS9NTyiCh5BtKc68UUariZwmE0zNkaK6sUAJnPBTAv9RU6zMXzB0RUWRBBrfwnfDPHGIn14UQnPETCChDP6qx4MUcylWM1nCKSF13MdQ7IhVM1fJV/CMT0ktWYJT+FTyi/aRbGPhHaw+qTLvovEEdg5VAlf1/z6zbO5i6bJIYSNVpMj2F6fpegZZB5JFy25RDLmVNtwxDsav4E/Q//wOzriBKG3NnFcOzoWAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" Text="Clear" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='SPAN' type='' /&gt;" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Resolution Comments:'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="412,226" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="Unfortunately, MTO items cannot be cancelled once they have started production; CCUI may not be update to date with scheduling and production status. If this cancellation request is regarding emails sent by West Elm starting 11/3, please note that we are working through getting them cancelled and should reflect on the order in a few weeks.">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://wsiams.wsgc.com/AMS/DirectShipWISMOCancels.aspx" DesignTimeRectangle="104, 305, 108, 41" ElementType="InputBox" FriendlyName="'TEXTAREA  ctl00_Content…'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAtCAYAAAB28O9iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC0SURBVHhe7dU7CsNAEAVBn1ZH0PVlxmAjC3/SbaiCxwYTdrC3gzQB494C7vtugZ29Al4PrOvcSsAgAeMEjBMwTsA4AeMEjBMwTsA4AeMEjBMwTsA4AeMEjBMwTsA4AeMEjBMwTsA4AeMEjBMwTsA4AeMEjBMwTsCobdser4BBz3hDwJhzvCFgyDXeEDDiGs8fGPIt3hBwcb/iDQEX9i/eEDDuY8AxB1t/Z28B6REwTsC047gDX/WR0b5cX4YAAAAASUVORK5CYII=" InformativeScreenshot="77380690931da49a4fff4d0459aa9e9e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Care Center AMS' /&gt;" SearchSteps="FuzzySelector, Image">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="11, 302, 91, 49" ElementType="Text" FriendlyName="'Resolution Comments:'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' idx='1' parentid='aspnetForm' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' parentid='aspnetForm' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tag='TD' type='' aaname='Resolution Comments:                                   ' check:text='Resolution Comments:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF8AAAA1CAYAAAAnIzfJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJqSURBVHhe7ZTBbcMwDEWzSg89dI0sEqBAFwmCjFGg56AdISM0vWUHH7KCSkqUTNuynbio/+U/gEAsyRT1RGcThM1mE7bbLUNCXaxFkc9oYy3iTrfbjQGIIp+sg3dN+StD+UAoHwjlA6F8IJQPhPKBUD4QygdC+UAoHwjlA6F8IJQPhPKBUD4QygdC+UCm5V+O4en5xcVbODU2twTJt/scSdA0Ic5MrZmh+Xxra339SvkQ5LPMMCu/I6L5CrvDjz0sYFRsE06vx/BtT4vQRnHC9SKWXuLf+An7Oy9+sfzvQ+9r0Lncdbam7URbY/l0fH+JSySPzJ3tC9Oiy55yiE4+vSB7luiLjXm6Q9KAY3mOYW/17y95Pr0faztYPbI+nzPuNzjjsKZyZp3XhnBz/eadlZ9fTuFElyTppq9OaETX5A7Iv8fki6TS+bZGD92u0d+6JgsedldNvlLPY2NRZtpXayrynNiyTvY7uz3SGWo1tbWN1ZS5v/P1IrLwwaXoAXIHSTjRCZNrY/Pyr+2zMhi7R75c4GUmj2+iQW2uprjfR3h3Xa5Rr8nVFi/X1ruOz9wvXyhd5IuuEEVcU7eUItyFdA9Ykz/W+f2DOuS9/n++Pp+n8jwkv9v5iVpNldo661oekh83sM9UD1K6QDbTv53ybAeKAuKYFZ3zlY6QT90+25hPiy576l4+34x8od3PcsXRiTwPym9K3SnqDaFjaS/vqJw77ydMyyf/CuUDoXwglA+E8oFQPhDKB0L5QCgfCOUDoXwglA+E8oFQPhDKB0L5QCgfCOUDoXwglA+E8oFU5TPWD3Y+EMqHEcIvZdIHqGdITkAAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" Text="Resolution Comments:" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='TD' type='' /&gt;" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Mark As Complete'" sap:VirtualizedContainerService.HintSize="412,166" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://wsiams.wsgc.com/AMS/DirectShipWISMOCancels.aspx" DesignTimeRectangle="81, 356, 64, 11" ElementType="Text" FriendlyName="'Mark As Complete'" FullSelectorArgument="&lt;webctrl parentid='ctl00_ContentPlaceHolder1_btnMarkComplete_CD' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ctl00_ContentPlaceHolder1_btnMarkComplete_CD' tag='SPAN' type='' aaname='Mark As Complete' check:text='Mark As Complete' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAPCAYAAABdjGkdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPLSURBVFhH7ZTBaxp5FMfnf/EwJ3PNTYKXevC29CIEdqfC5mLBg1nBJQdFoiEgLAONEmppDklQZMAwB4dCjIE6Q3HQkpiDM1AcShghdCiC28t338/RHW1s2N3bgocP/t7vfd/3PZ3ncM1mE2s8uLOzM6zx4I6OjrDGg9vf38caD253dxdrPLhoNIpo9C0+jsYwlN/oTPHrDkbfPuFymvsx15/HuDtdnYtGq7j7suD5BIVLA1/GY3wjxqMOTldo/jnX+Dy+W+FRRce4RvHR/TJcOBxGOFxC7/4BD8MmkhSXewbu74dQ6LxXVtw3sFJBXggjWZJREfOoSCV8GH5Fr0T1e2XIlTz5MK8Z5T75DQkFAotjIuTpm1yGGFvQ5d/j4WsPJfJmsSCKKIRjEOUFbbIEWaqgojShlPcQE2XKSRBn80iVChTylsUYeSgYMj/ycnVuTbLUw8OfQ3wgz1JyOff3LATn9/vh9+egmRrk7gjdExlm/xyyaUKiXOr4HIVEAmnZgtVKIKc5mFga3p3n0DIdaCcSTKuLkx3m41FgXoUUWiPyeeaHRNrucQKJAn2BwoJWMjEi38XanDaCKaeRSNMsIw25nAbH6eM8fYyuM4H5rjCdZ6Slp/M4fQmFtIQ+0zyjeRyqSbVgmTLSiTRky4J2LMNyaM7ES/xyuJxrpbzeHM/z4PksVENF9oUCY+JAP+RRMwzUKPfizRUM24ZNg9hqFlnVgVFjNUwDTEiv7rmxxyF0+xa1eBxFnemDVGfDsW6hXhQRDy5oycRSthdq47iy3d4srhnkL6twjJoXs35ZFcZ38xR1C2q2BsNRUbti/XToOmHYuD1177Okiz/KzXvz4Hw+H3y+DNqDNjK+AH4/yCBCd9XBAFXfa9zYHRwESJNpY9DOINN2MKiyGqZx0K63YdtUyzRTL+KgA3vQRL1eR71xA2dQRYDuA5Ff8arjYFj/ydOSrzNs4Od5HE7iPf3VGhEWR9Bg57ekIQ+Wn/bMuHXL8wQoZ6P5soqB08Yf9SGGjYjrOcW9z9A58Cjnsbwhs1+J4W7INi7oidh0tmz6fLQh9LSytEX0lJ3bNwjOag91G3px7pWcPnHzxoZFPoZt4Ypq5n14frY9pDEMi/4aOipFnX5kFtNmku82bcPShrD6hQ2ZzLRMs83PNiFI34lmdnvS1p/GoVgs1lFLf5/z5uE2NjbwNCEIOwJCK3P/jpAg4PmKe5fnEISQF4cE7CzGPyBP7xBTWp1jPNVzVY7b3NzE/5nUxUdciqtz/wVua2sLazy4YDCINXOC+AtxAMgRqarlhgAAAABJRU5ErkJggg==" InformativeScreenshot="2d34b4e3fd1d43ced3116e5e717645bc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Care Center AMS' /&gt;" SearchSteps="FuzzySelector, Image" Text="Mark As Complete" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='SPAN' type='' /&gt;">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="71, 353, 83, 17" ElementType="Button" FriendlyName="'Mark As'" FullSelectorArgument="&lt;webctrl id='ctl00_ContentPlaceHolder1_btnMarkComplete_CD' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ctl00_ContentPlaceHolder1_btnMarkComplete_CD' tag='DIV' type='' aaname=' &amp;#x9;&amp;#x9; &amp;#x9;' check:text='Mark As Complete&amp;#xA;&amp;#x9;&amp;#x9;Mark As Complete' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAAASCAYAAADFavmwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAP3SURBVFhH7ZXBaxp5FMf7v3jwlFxzk+ClHrwtvQQCu1Nhc7HgwazgkoMi0RAQloGNEmppDklQZMAwB4dCjIHqUBy0JObgDCwzlDBC6FAEt5fvvnF0M79oYhdzWgx8cN7vfd/393x56gv6w5Lnwf6j1xeo1WpLFoQZ6MnJyZIFYQZ6cHCwZEGYge7u7i5ZEGag29vbSxaEGWgoFJrDe3zuD6BKvznx2xb63//C+ZSO5fLLADfHs3OhUAk3X12eT5A9V/F1MMB3YtBv4XiG5se5xJfBzQyPElrqJXJT5z8GM9BgMDiHPDq3d7jTa4hRXOiouL3VIdHzTkFyfumkIjJcELG8iCKfQVHI45P+DZ081e8UIBYzrGehS346IYGz4zAPcfSLKYIPu3SZj7j71kGevO2Y43lkg2Hwoksby0MUiihKNUiFHYR5kXIC+HE/QrEIibxFPkweEnTbj7wcnVMTy3dw97eOT+SZj7G5f3t5AmagKysrc0hD1mSI7T7aRyK07ilETYNAufjhKbLRKBKiAaMeRVq2MDRkfDhNo65ZkI8EaEYbR1usZ9b2ysZR75PPyxUIpG0fRhHN0gCyLq2goU++7tq03IcmJhBNUC99Gem0DMvq4jRxiLY1hPYhO+qnLydG/VhdAdmEgK6teUn9WFQTr8PQRCSiCYiGAflQhGFRn9E3+GWfzdXjrn4egRmo1+udQwpNtYnUawnq0IKy70VZVVGm3Ot3F1BNEya9EbOZQqppQS07dWUVGJK+ufPQbx+KeY1yJIKcYuv9VGfCMq7RPMsh4ndpycSQNl21EVyYzt12XFbJX2zCUsv3sX1fqgn1QT85xUAzVYZqNVG+sO9ToCiEauL62DlPkS4ylZvc/TjMQD0ezxySaPQaSHp8+H0viQ06K/V6KHne4spsYc9HmmQDvUYSyYaFXsmpK/UsNCoNmCbV2pqJ314LZq+GSqWCSvUKVq8EH537Nn7Fny0LeuWney35WnoVP0/iYAwf6auiumHHG6jaz+9JQx52fnRn0qlj+/FRzkTtTQk9q4E/Kjr06objOcI5T9Kzbyo3H2agsybOMt5Q15mzoZs4o40w6dkw6XVqQ2lbUrTFtGXW9Tv4x7X7igklN/GKjTZOuzJhkI9qGrigmsk9Xu94e0mjqgZ9tBUUcwr9k+yYPhnku0nbyGyoXe/a0OFYa2s2veNN9NN7op6dO+lTdxyBZNixgnLiYc7dz2yYga6uri5AANwWh8DM3H8jwHF4NePc4RU4LnAfBzhsueNHyNB3qCbMztk8defT/bAwA11bW/vfEj/7jHN+du45YQa6vr6+ZEGYgfr9/iULshzoM8MMdMnzAAD/AJA88YfFwiICAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" Text="Mark As Complete&#xA;&#x9;&#x9;Mark As Complete" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='DIV' type='' /&gt;" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset Position="BottomRight" X="-31" Y="-2" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:01:15" sap:VirtualizedContainerService.HintSize="412,78" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:RepeatNumberOfTimesX.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:RepeatNumberOfTimesX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp BrowserType="Chrome" IconBase64="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" InformativeScreenshot="f7e15dcedafb92da64675c796d55ab69.png" Selector="&lt;html app='chrome.exe' title='Care Center AMS'/&gt;" Url="https://wsiams.wsgc.com/AMS/DirectShipWISMOCancels.aspx" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
